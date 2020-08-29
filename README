@@ -1,0 +1,52 @@
+Alyxandra Spikerman
+Written for a course at Northeastern University: High Performance Computing
+
+Q2.cpp
+
+This program takes in a number and a thread number (n) and finds all the primes between 1 and the number using n threads. The program then prints out all the primes between 1 and the number and gives the serial and parallel times.
+
+--HOW TO COMPILE--
+g++ -lpthread Q2.cpp -o threaded_prime
+
+OR
+
+make threaded_prime
+
+--HOW TO RUN--
+./threaded_prime <highest number> <number of threads>
+
+--EX OUTPUT--
+[spikerman.a@c2133 ~]$ ./threaded_prime 100 2
+1
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+53
+59
+61
+67
+71
+73
+79
+83
+89
+97
+Parallel time: 0s, Serial time: 0s
+
+--RESOURCES USED--
+- https://www.bogotobogo.com/cplusplus/multithreading_pthread.php
+- In class pthread examples
+- http://mathandmultimedia.com/2012/06/02/determining-primes-through-square-root/
+- https://stackoverflow.com/questions/33617421/write-concurrently-vectorbool
